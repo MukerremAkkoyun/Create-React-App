@@ -4,10 +4,13 @@ class NewsItem extends Component {
     
     render(){
 
+        console.log(this.props);
+        const { title, description } = this.props;
+
         return(
             <div>
-                <h1 className="test"> Hello React</h1>
-                <p>Eos animi quis qui pariatur aliquam distinctio iure id quaerat. Architecto ducimus sequi. Ut necessitatibus placeat eum delectus. Saepe veniam laudantium quis id et autem aperiam eius et.</p>
+                <h1 className="test"> {title}</h1>
+                <p>{this.props.description}</p>
                 <label htmlFor ="test" ></label>
             </div>
         )

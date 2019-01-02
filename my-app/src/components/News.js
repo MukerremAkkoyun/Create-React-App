@@ -4,10 +4,10 @@ import NewsItem from './NewsItem';
 
 export default class News extends Component {
 
-//StateFul
-static propTypes = {
-  news: PropTypes.array
-};
+  //StateFul
+  static propTypes = {
+    news: PropTypes.array.isRequired
+  };
 
   render() {
 
@@ -29,6 +29,6 @@ static propTypes = {
 
 
 //Stateless
-News.propTypes={
+News.propTypes = {
   name: PropTypes.string
 }

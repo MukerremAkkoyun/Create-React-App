@@ -24,7 +24,7 @@ const news = [
 class App extends Component {
  
   state = {
-      name : 'muko'
+    name : 'muko'
   };
   
   addNews(){
@@ -45,7 +45,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+           {this.state.name} Edit <code>src/App.js</code> and save to reload.
           </p>
           <News news={news}  name="content" addNews={ this.addNews } />
         </header>

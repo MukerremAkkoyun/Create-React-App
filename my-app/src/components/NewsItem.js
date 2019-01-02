@@ -18,9 +18,3 @@ class NewsItem extends Component {
 }
 
 export default NewsItem;
-
-// import React from 'react';
-
-// class NesItem exdents React.Component {
-
-// }

@@ -9,13 +9,23 @@ export default class News extends Component {
     news: PropTypes.array.isRequired
   };
 
+    static propTypes = {
+    newsData:PropTypes.shape({
+      title: PropTypes.string,
+      description: PropTypes.string
+    })
+  };
+
+
+ 
   render() {
 
     const elements = this.props.news.map(news =>
       <NewsItem
         key={news.id}
-        title={news.title}
-        description={news.description} />);
+        // title={news.title}
+        // description={news.description}
+        newsData = {news}  />);
 
     return (
       <div>
@@ -30,5 +40,9 @@ export default class News extends Component {
 
 //Stateless
 News.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string
+  ]).isRequired
 }
+

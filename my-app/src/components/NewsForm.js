@@ -2,15 +2,27 @@ import React, { Component } from 'react';
 
 class NewsForm extends Component {
 
-    addButton() {
+    constructor(props) {
+        super(props);
+       this.addButton = this.addButton.bind(this); 
+    }
+
+    // addButton() {
+    //     console.log('hello');
+    //     this.props.addNews();
+    // };
+
+    addButton = () => {
         console.log('hello');
         this.props.addNews();
-    }
+    };
 
     render() {
         return (
             <div>
-                <button onClick={this.addButton.bind(this)}>Add</button>
+                <button onClick={this.addButton}>Add</button> 
+                {/*  this.addButton.bind(this) */}
+                {/*  () => this.addButton()    */}
             </div>
         );
     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class NewsItem exdents Component {
+class NewsItem extends Component {
     
     render(){
 

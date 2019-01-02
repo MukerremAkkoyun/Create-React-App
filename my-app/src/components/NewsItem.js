@@ -26,8 +26,7 @@ class NewsItem extends Component {
     return (
       <div>
         <h1 className="test"> {title}</h1>
-        <p>{this.props.description}</p>
-        {description}
+        <p>{this.props.description}</p> {description}
       </div>
     );
   }

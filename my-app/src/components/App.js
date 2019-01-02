@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-import NewsItem from './NewsItem';
+import logo from '../logo.svg';
+import '../App.css';
+import News from './News';
 
 class App extends Component {
   render() {
@@ -13,7 +12,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <NewsItem />
+          <News />
         </header>
       </div>
     );

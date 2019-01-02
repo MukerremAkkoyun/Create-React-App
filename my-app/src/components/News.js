@@ -5,7 +5,11 @@ export default class News extends Component {
 
   render() {
 
-    const elements =  this.props.news.map( news =>  <NewsItem title={news.title} description={news.description} />);
+    const elements =  this.props.news.map( news =>  
+    <NewsItem 
+        key={news.id}
+        title={news.title} 
+        description={news.description} />);
 
     return (
       <div>

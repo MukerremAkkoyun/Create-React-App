@@ -33,7 +33,7 @@ export default class News extends Component {
 
         {this.props.name}
         {elements}
-        <NewsForm />
+        <NewsForm  addNews={this.props.addNews} />
       </div>
     )
   }

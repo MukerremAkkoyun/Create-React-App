@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import NewsItem from './NewsItem';
+import NewsForm from './NewsForm';
 
 export default class News extends Component {
 
@@ -32,6 +33,7 @@ export default class News extends Component {
 
         {this.props.name}
         {elements}
+        <NewsForm />
       </div>
     )
   }

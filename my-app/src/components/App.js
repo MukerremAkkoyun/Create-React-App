@@ -30,7 +30,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <News news={news}  name="Muko"/>
+          <News news={news}  name="1sss"/>
         </header>
       </div>
     );

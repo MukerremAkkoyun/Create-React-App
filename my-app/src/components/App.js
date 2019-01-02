@@ -23,6 +23,10 @@ const news = [
 
 class App extends Component {
  
+  state = {
+      name : 'muko'
+  };
+  
   addNews(){
     console.log("runned");
     news.push({
